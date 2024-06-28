@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.title("ChatGPT-style Chatbot with Perplexity")
+st.title("Zain's Perplexity App")
 
 # Initialize 'messages' in session_state if not already present
 if 'messages' not in st.session_state:
@@ -24,7 +24,7 @@ def send_message(user_input):
                 "role": "user"
             }
         ],
-        "max_tokens": 300,
+        "max_tokens": 500,
         "temperature": 0.2,
         "top_p": 0.9,
         "return_citations": False,
